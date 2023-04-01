@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .content
+    {
+      position: absolute;
+      max-width: 700px;
+      z-index: 10;
+    }
+    .content h3
+    {
+      font-size: 2em;
+      color: #333;
+      font-weight: 200;
+      transition: 0.5s; 
+    }
+    .content h2
+    {
+      font-size: 2em;
+      color: #333;
+      font-weight: 700;
+      transition: 0.5s;
+    }
+    .content h2 span
+    {
+      color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+  <section class="banner">
+    
+    <div class="content">
+      <h3>Hey_</h3>
+      <h2>I am  <span id="text"></span></h2>
+      
+    </div>
+  </section>
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script>
+    let typingText = new Typed("#text", {
+      strings : ["Kirios Guna","Bloger","Coder"],
+      loop : true,
+      typeSpeed : 100,
+      backSpeed :50,
+      backDelay : 1000,
+    })
+  </script>  
+</body>
+</html>
